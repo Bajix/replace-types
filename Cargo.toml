@@ -1,0 +1,20 @@
+[package]
+name = "replace-types"
+authors = ["Thomas Sieverding <Thomas@bajix.com>"]
+edition = "2021"
+version = "0.1.0"
+description = "Extension trait for replacing syn types"
+readme = "./README.md"
+license = "MIT"
+repository = "https://github.com/Bajix/replace-types/"
+
+[lib]
+test = false
+doctest = false
+
+[dependencies]
+syn = { version = "2", features = ["full", "extra-traits"] }
+
+[package.metadata.docs.rs]
+all-features = false
+rustdoc-args = ["--cfg", "docsrs"]
