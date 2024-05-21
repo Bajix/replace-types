@@ -20,7 +20,7 @@ use syn::{
     TypeTuple, Variant, WhereClause, WherePredicate,
 };
 
-/// Extension trait to replace `TypePath` for 
+/// Extension trait for `syn` types to replace `TypePath`
 pub trait ReplaceTypes {
     fn replace_types(&mut self, substitutions: &HashMap<TypePath, TypePath>);
 }
